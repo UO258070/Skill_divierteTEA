@@ -1,0 +1,733 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "divierte tea",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "Atrás"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "Explicamelo",
+            "No lo entiendo",
+            "No sé",
+            "No lo sé",
+            "Ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "salir de divierte tea",
+            "cierra el juego",
+            "cierra divierte tea",
+            "salir del juego",
+            "Salir",
+            "Quiero acabar",
+            "Acabar",
+            "Quiero terminar",
+            "Terminar",
+            "Callate",
+            "Para",
+            "Adios"
+          ]
+        },
+        {
+          "name": "NivelIntent",
+          "slots": [
+            {
+              "name": "juego",
+              "type": "NombreJuego",
+              "samples": [
+                "jugar a {juego}",
+                "quiero jugar a {juego}",
+                "{juego}",
+                "a {juego}"
+              ]
+            },
+            {
+              "name": "opcion",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "a las {juego}",
+            "a los {juego}",
+            "la {opcion}",
+            "la opcion {opcion}",
+            "opcion {opcion}",
+            "a {juego}",
+            "{juego}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "PreguntaJuegoIntent",
+          "slots": [
+            {
+              "name": "pantalla",
+              "type": "opPantalla",
+              "samples": [
+                "{pantalla}",
+                "con {pantalla}"
+              ]
+            }
+          ],
+          "samples": [
+            "{pantalla}",
+            "solo con {pantalla}",
+            "con {pantalla}"
+          ]
+        },
+        {
+          "name": "OpcionPantallaIntent",
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "{nombre}",
+            "mi nombre es {nombre}",
+            "me llamo {nombre}"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "PreguntasIntent",
+          "slots": [
+            {
+              "name": "nivel",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "dos",
+                "uno",
+                "el nivel {nivel}",
+                "{nivel}",
+                "el {nivel}",
+                "nivel {nivel}"
+              ]
+            }
+          ],
+          "samples": [
+            "el nivel {nivel}",
+            "el {nivel}",
+            "quiero el {nivel}",
+            "quiero el nivel {nivel}",
+            "nivel {nivel}"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "prueba",
+          "slots": [],
+          "samples": [
+            "esto es una prueba"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "CambioIntent",
+          "slots": [
+            {
+              "name": "cambio",
+              "type": "cambio"
+            }
+          ],
+          "samples": [
+            "cambio de {cambio}",
+            "quiero cambiar el {cambio}",
+            "quiero cambiar de {cambio}",
+            "cambiar el {cambio}",
+            "cambiar de {cambio}"
+          ]
+        },
+        {
+          "name": "EvolucionIntent",
+          "slots": [],
+          "samples": [
+            "quiero ver mi evolucion",
+            "quiero ver la evolucion",
+            "ver el historial",
+            "ver la evolucion",
+            "ver mi evolucion",
+            "ver evolucion"
+          ]
+        },
+        {
+          "name": "RespuestaLyNIntent",
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "hay {numero}",
+            "{numero}"
+          ]
+        },
+        {
+          "name": "RespuestaAnimalesIntent",
+          "slots": [
+            {
+              "name": "nombreAnimal",
+              "type": "AMAZON.Animal"
+            },
+            {
+              "name": "colectivo",
+              "type": "colectivo"
+            }
+          ],
+          "samples": [
+            "{nombreAnimal}",
+            "un {nombreAnimal}",
+            "el {nombreAnimal}",
+            "la {nombreAnimal}",
+            "una {nombreAnimal}",
+            "{colectivo}",
+            "un {colectivo}",
+            "el {colectivo}",
+            "una {colectivo}",
+            "la {colectivo}"
+          ]
+        },
+        {
+          "name": "RespuestaTransportesIntent",
+          "slots": [
+            {
+              "name": "transporte",
+              "type": "transporte"
+            },
+            {
+              "name": "medio",
+              "type": "medio"
+            }
+          ],
+          "samples": [
+            "por la {medio}",
+            "por el {medio}",
+            "por {medio}",
+            "{transporte}",
+            "un {transporte}",
+            "el {transporte}",
+            "la {transporte}",
+            "una {transporte}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "3",
+              "name": {
+                "value": "letras y numeros",
+                "synonyms": [
+                  "contar",
+                  "numeros",
+                  "letras",
+                  "letras y numeros",
+                  "opción 3",
+                  "opcion 3"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "transportes",
+                "synonyms": [
+                  "opcion 2",
+                  "opción 2"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "animales",
+                "synonyms": [
+                  "opcion 1",
+                  "opción 1",
+                  "sonidos",
+                  "sonidos de animales",
+                  "sonidos de animal",
+                  "animal"
+                ]
+              }
+            }
+          ],
+          "name": "NombreJuego"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "sonidos",
+                "synonyms": [
+                  "sonidos"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pantalla"
+              }
+            }
+          ],
+          "name": "opPantalla"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "nivel"
+              }
+            },
+            {
+              "name": {
+                "value": "juego",
+                "synonyms": [
+                  "actividad"
+                ]
+              }
+            }
+          ],
+          "name": "cambio"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "piragua",
+                "synonyms": [
+                  "canoa"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "submarino"
+              }
+            },
+            {
+              "name": {
+                "value": "barco"
+              }
+            },
+            {
+              "name": {
+                "value": "tractor"
+              }
+            },
+            {
+              "name": {
+                "value": "moto"
+              }
+            },
+            {
+              "name": {
+                "value": "bicicleta",
+                "synonyms": [
+                  "bici"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tren"
+              }
+            },
+            {
+              "name": {
+                "value": "autobus",
+                "synonyms": [
+                  "autobús",
+                  "bus"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "camion",
+                "synonyms": [
+                  "camión"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "coche"
+              }
+            },
+            {
+              "name": {
+                "value": "globo"
+              }
+            },
+            {
+              "name": {
+                "value": "cohete"
+              }
+            },
+            {
+              "name": {
+                "value": "helicoptero",
+                "synonyms": [
+                  "helicóptero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "avion",
+                "synonyms": [
+                  "avión"
+                ]
+              }
+            }
+          ],
+          "name": "transporte"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "gateria"
+              }
+            },
+            {
+              "name": {
+                "value": "torada"
+              }
+            },
+            {
+              "name": {
+                "value": "piara"
+              }
+            },
+            {
+              "name": {
+                "value": "manada"
+              }
+            },
+            {
+              "name": {
+                "value": "ganado",
+                "synonyms": [
+                  "ganado bovino",
+                  "ganado porcino",
+                  "ganado ovino",
+                  "ganado de vacas",
+                  "ganado de ovejas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "colonia"
+              }
+            },
+            {
+              "name": {
+                "value": "camada"
+              }
+            },
+            {
+              "name": {
+                "value": "bandada",
+                "synonyms": [
+                  "bandada de pajaros"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "averio"
+              }
+            },
+            {
+              "name": {
+                "value": "rebaño",
+                "synonyms": [
+                  "rebaño de ovejas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ardillas"
+              }
+            },
+            {
+              "name": {
+                "value": "jauria de perros",
+                "synonyms": [
+                  "jauria"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "enjambre",
+                "synonyms": [
+                  "enjambre de abejas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "banco de peces",
+                "synonyms": [
+                  "cardumen",
+                  "banco"
+                ]
+              }
+            }
+          ],
+          "name": "colectivo"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "tierra",
+                "synonyms": [
+                  "campo",
+                  "carretera"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "aire",
+                "synonyms": [
+                  "cielo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "agua",
+                "synonyms": [
+                  "mar"
+                ]
+              }
+            }
+          ],
+          "name": "medio"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PreguntasIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "nivel",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1068482397393.1091762655043"
+              },
+              "validations": [
+                {
+                  "type": "isInSet",
+                  "prompt": "Slot.Validation.627636191195.1515498444967.1556771188988",
+                  "values": [
+                    "1",
+                    "2"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NivelIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "juego",
+              "type": "NombreJuego",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1115439438757.961183947352"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1115439438757.961183947352.867699247472"
+                }
+              ]
+            },
+            {
+              "name": "opcion",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "PreguntaJuegoIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "pantalla",
+              "type": "opPantalla",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1347464224671.421968653432"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1347464224671.421968653432.1531913099702"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CambioIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cambio",
+              "type": "cambio",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.474792161972.1469162274016.506577457259"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Slot.Validation.627636191195.1515498444967.1556771188988",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Lo siento, ese nivel no es válido. Que nivel quieres ¿el uno o el dos?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1068482397393.1091762655043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Qué nivel quieres?"
+          },
+          {
+            "type": "PlainText",
+            "value": "¿Quieres el nivel uno o el nivel dos?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1115439438757.961183947352",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Tienes que decirme a que quieres jugar"
+          },
+          {
+            "type": "PlainText",
+            "value": "¿Qué juego quieres?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1115439438757.961183947352.867699247472",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Lo siento, ese juego no está disponible. Dime a qué quieres jugar."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1347464224671.421968653432.1531913099702",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Quieres jugar con pantalla o solo con sonidos?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1347464224671.421968653432",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Quieres jugar con pantalla o solo con sonidos?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.474792161972.1469162274016.506577457259",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Lo siento, eso no lo puedo hacer. Dime, ¿quieres cambiar de nivel, cambiar de juego, ver tu evolución o salir del juego?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Lo siento, eso no lo puedo hacer. Solo puedo cambiar de nivel, cambiar de juego, ver la evolución o salir del juego. ¿Qué quieres hacer?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "99"
+}
